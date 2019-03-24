@@ -12,4 +12,5 @@ struct PlacesModel {
     var name: String
     var postalCode: String
     var address: String
+    var city: String
 }

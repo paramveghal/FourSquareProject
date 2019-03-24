@@ -15,6 +15,8 @@
 		BB14E9B82245A5B300ED5D46 /* PlacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB14E9B62245A5B300ED5D46 /* PlacesTableViewCell.swift */; };
 		BB14E9B92245A5B300ED5D46 /* PlacesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB14E9B72245A5B300ED5D46 /* PlacesTableViewCell.xib */; };
 		BB2F643022465D7200692C5F /* PlacesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2F642F22465D7200692C5F /* PlacesModel.swift */; };
+		BB2F64332248025F00692C5F /* PlacesDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB2F64322248025F00692C5F /* PlacesDetails.storyboard */; };
+		BB2F64352248033E00692C5F /* PlacesDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2F64342248033E00692C5F /* PlacesDetailsViewController.swift */; };
 		BBC1BA25224523BC00F993C2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBA41B062244F8EE00C8CD2B /* Alamofire.framework */; };
 		BBC1BA27224523D700F993C2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBC1BA26224523D600F993C2 /* Alamofire.framework */; };
 		BBC1BA292245240500F993C2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBC1BA282245240500F993C2 /* Alamofire.framework */; };
@@ -117,6 +119,8 @@
 		BB14E9B72245A5B300ED5D46 /* PlacesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacesTableViewCell.xib; sourceTree = "<group>"; };
 		BB1B64412245199000DED3A7 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Carthage/Checkouts/Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		BB2F642F22465D7200692C5F /* PlacesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesModel.swift; sourceTree = "<group>"; };
+		BB2F64322248025F00692C5F /* PlacesDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlacesDetails.storyboard; sourceTree = "<group>"; };
+		BB2F64342248033E00692C5F /* PlacesDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesDetailsViewController.swift; sourceTree = "<group>"; };
 		BBA41B062244F8EE00C8CD2B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		BBC1BA26224523D600F993C2 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		BBC1BA282245240500F993C2 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 				BB14E9AA22459A4E00ED5D46 /* PlacesViewController.xib */,
 				BB14E9B62245A5B300ED5D46 /* PlacesTableViewCell.swift */,
 				BB14E9B72245A5B300ED5D46 /* PlacesTableViewCell.xib */,
+				BB2F64342248033E00692C5F /* PlacesDetailsViewController.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -241,6 +246,7 @@
 				BBFE11542242AD0100747229 /* LaunchScreen.storyboard */,
 				BBFE11572242AD0100747229 /* Info.plist */,
 				BBFE117B2242ADB800747229 /* NetworkingClient.swift */,
+				BB2F64322248025F00692C5F /* PlacesDetails.storyboard */,
 			);
 			path = FourSquare;
 			sourceTree = "<group>";
@@ -427,6 +433,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB2F64332248025F00692C5F /* PlacesDetails.storyboard in Resources */,
 				BB14E9AC22459A4E00ED5D46 /* PlacesViewController.xib in Resources */,
 				BBFE11562242AD0100747229 /* LaunchScreen.storyboard in Resources */,
 				BBFE11532242AD0100747229 /* Assets.xcassets in Resources */,
@@ -482,6 +489,7 @@
 				BBFE114C2242AD0000747229 /* AppDelegate.swift in Sources */,
 				BB14E9B82245A5B300ED5D46 /* PlacesTableViewCell.swift in Sources */,
 				BB2F643022465D7200692C5F /* PlacesModel.swift in Sources */,
+				BB2F64352248033E00692C5F /* PlacesDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
