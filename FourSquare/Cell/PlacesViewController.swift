@@ -26,11 +26,11 @@ class PlacesViewController: UIViewController {
     let formattedDate = "20180101"
     
     let errorText = "We are extremely sorry we cant get you a postcode ☹️"
-    
     var searchValue  = ""
     
     
     @IBAction func searchButtonPressed(_ sender: Any) {
+        self.placesData.removeAll()
         fetchPlacesData()
     }
     
@@ -39,9 +39,9 @@ class PlacesViewController: UIViewController {
         
         self.tableView.estimatedRowHeight = 50
         self.tableView.register(UINib(nibName: "PlacesTableViewCell", bundle: nil), forCellReuseIdentifier: "placesCell")
-        fetchPlacesData()
+        self.searchBar.placeholder = "Enter City"
     }
-    
+
     //MARK: - Network fetch request
     func fetchPlacesData() {
         DispatchQueue.main.async {
@@ -60,6 +60,7 @@ class PlacesViewController: UIViewController {
                             self.placesData.append(place)
                             self.tableView.reloadData()
                         })
+                    // catching any error's fetching data via API
                     case .failure(let error):
                         print(error.localizedDescription)
                     }

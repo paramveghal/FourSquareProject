@@ -7,6 +7,8 @@
 //
 
 import XCTest
+//import Nimble
+//import Quick
 @testable import FourSquare
 
 class FourSquareTests: XCTestCase {
