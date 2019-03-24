@@ -10,5 +10,6 @@ import Foundation
 
 struct PlacesModel {
     var name: String
+    var postalCode: String
     var address: String
 }

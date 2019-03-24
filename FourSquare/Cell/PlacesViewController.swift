@@ -27,13 +27,11 @@ class PlacesViewController: UIViewController {
     
     @IBAction func searchButtonPressed(_ sender: Any) {
         fetchPlacesData()
-        self.tableView.reloadData()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // self.tableView.rowHeight = UITableViewAutomaticDimension
+
         self.tableView.estimatedRowHeight = 50
         self.tableView.register(UINib(nibName: "PlacesTableViewCell", bundle: nil), forCellReuseIdentifier: "placesCell")
         fetchPlacesData()
@@ -50,11 +48,11 @@ class PlacesViewController: UIViewController {
                         let data = json["response"]
                         data["venues"].array?.forEach({ (place) in
                             let place = PlacesModel(name: place["name"].stringValue,
+                                                    postalCode: place["location"]["postalCode"].stringValue,
                                                     address: place["location"]["address"].stringValue)
                             self.placesData.append(place)
-                            print(place)
+                            self.tableView.reloadData()
                         })
-                        self.tableView.reloadData()
                     case .failure(let error):
                         print(error.localizedDescription)
                     }
@@ -72,10 +70,10 @@ extension PlacesViewController: UITabBarDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "placesCell", for: indexPath) as! PlacesTableViewCell
+        
         cell.nameLabel.text = self.placesData[indexPath.row].name
         cell.addressLabel.text = self.placesData[indexPath.row].address
+        cell.postalCode.text = self.placesData[indexPath.row].postalCode
         return cell
     }
-    
-    
 }

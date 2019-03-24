@@ -32,13 +32,13 @@
                     </connections>
                 </tableView>
                 <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="zxW-db-wlt">
-                    <rect key="frame" x="0.0" y="20" width="286" height="56"/>
+                    <rect key="frame" x="0.0" y="20" width="280" height="56"/>
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9X-Mz-E9e">
-                    <rect key="frame" x="286" y="20" width="73" height="56"/>
+                    <rect key="frame" x="295" y="21" width="64" height="56"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="73" id="CtV-JS-EaM"/>
+                        <constraint firstAttribute="width" constant="64" id="4lc-wD-kDV"/>
                     </constraints>
                     <state key="normal" title="Search">
                         <color key="titleColor" white="0.52101004464285716" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -52,15 +52,13 @@
             <constraints>
                 <constraint firstItem="fhL-08-DK9" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="6N2-6M-HnI"/>
                 <constraint firstItem="fhL-08-DK9" firstAttribute="top" secondItem="zxW-db-wlt" secondAttribute="bottom" constant="9" id="9uj-Ox-moK"/>
-                <constraint firstItem="y9X-Mz-E9e" firstAttribute="top" secondItem="zxW-db-wlt" secondAttribute="top" id="B1o-by-bZ2"/>
                 <constraint firstItem="fhL-08-DK9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="65" id="Dfn-Ck-9hn"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="y9X-Mz-E9e" secondAttribute="trailing" constant="16" id="Eep-oZ-IUX"/>
-                <constraint firstItem="y9X-Mz-E9e" firstAttribute="leading" secondItem="zxW-db-wlt" secondAttribute="trailing" id="FeK-J7-Hkm"/>
                 <constraint firstItem="fhL-08-DK9" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="GEu-XJ-LvE"/>
                 <constraint firstItem="zxW-db-wlt" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="MuB-Pu-Pix"/>
-                <constraint firstItem="y9X-Mz-E9e" firstAttribute="bottom" secondItem="zxW-db-wlt" secondAttribute="bottom" id="S52-I0-NDU"/>
-                <constraint firstItem="fhL-08-DK9" firstAttribute="top" secondItem="y9X-Mz-E9e" secondAttribute="bottom" constant="9" id="Ul6-NF-THO"/>
-                <constraint firstItem="y9X-Mz-E9e" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailingMargin" id="fDp-gE-sOs"/>
+                <constraint firstItem="y9X-Mz-E9e" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="1" id="SRV-6s-5g0"/>
+                <constraint firstItem="fhL-08-DK9" firstAttribute="top" secondItem="y9X-Mz-E9e" secondAttribute="bottom" constant="8" symbolic="YES" id="Sd8-OS-ImQ"/>
+                <constraint firstItem="y9X-Mz-E9e" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailingMargin" id="TCC-3p-4Ob"/>
+                <constraint firstItem="y9X-Mz-E9e" firstAttribute="leading" secondItem="zxW-db-wlt" secondAttribute="trailing" constant="15" id="WyN-C0-Dkh"/>
                 <constraint firstItem="zxW-db-wlt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qkN-jG-0nw"/>
                 <constraint firstItem="fhL-08-DK9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vAb-4g-LvG"/>
             </constraints>
