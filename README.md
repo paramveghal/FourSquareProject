@@ -42,4 +42,4 @@ also it would've been cheaper on server calls as we would have been able to vali
 the user would have taken to a new screen and they would be presented with extra details that were not presented on the
  TableViewCell.
  
- Hope you like this app! - It is a very simple interpreation of being able to access FourSquare API.
+ Hope you like this app! - It is a very simple interpretation of being able to access FourSquare API.
